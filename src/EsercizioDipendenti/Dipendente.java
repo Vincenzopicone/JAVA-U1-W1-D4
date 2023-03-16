@@ -37,7 +37,7 @@ public class Dipendente {
     }
 
     public Dipendente (String matr, Dipartimento dip) {
-        this.matricola = matr + Math.random() * 10;
+        this.matricola = matr + " " + Math.random() * 2;
         this.stipendio = stipendioBase;
         this.importoOrarioStraordinario = 30;
         this.Livello = EsercizioDipendenti.Livello.OPERAIO;
@@ -46,7 +46,7 @@ public class Dipendente {
     }
 
     public Dipendente (String matr, Livello liv, Dipartimento dip  ) {
-        this.matricola = matr + Math.random() * 10;
+        this.matricola = matr + " " + Math.random() * 2;
         this.stipendio = stipendioBase;
         this.importoOrarioStraordinario = 30;
         setLivello(liv);
@@ -54,7 +54,7 @@ public class Dipendente {
     }
 
     public static void stampaDatiDipendente () {
-        System.out.println("Matricola: " + matricola +" "+  "Stipendio: " + "" + stipendio + " " + "Importo per straordinario: "+  importoOrarioStraordinario + " " + "Livello: " + Livello + " " + "Dipartimento: " + Dipartimento);
+        System.out.println("Matricola: " + matricola +" "+  "Stipendio: " + "" + stipendio+"€" + " " + "Importo per straordinario: "+  importoOrarioStraordinario+"€"  + " " + "Livello: " + Livello + " " + "Dipartimento: " + Dipartimento);
     }
 
     public static void promuovi (Dipendente dipendente) {
